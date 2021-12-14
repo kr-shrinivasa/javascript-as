@@ -1,13 +1,48 @@
 <html>
-    <head>
-        <title>Todo List</title>
-    </head>
-    <body>
-        <div>
+
+<head>
+    <title>Todo List</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+            margin-top: 5rem;
+            text-align: center;
+        }
+
+        .todos div{
+            padding: 0.7rem;
+            background: #444;
+            margin-top: 1rem;
+            text-transform: capitalize;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(247, 241, 241);
+            font-size: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-todo">
             <input type='text' name='todo_input'>
             <button type='submit'>Add Todo</button>
-            <div class='todos'></div>
+        </form>
+        <div class='todos'>
+            <div>
+                <span class="text">Do This Do That</span>
+                <div>
+                    <button class=" done">Done</button>
+                    <button class=" remove">Remove</button>
+
+                </div>
+            </div>
         </div>
-    </body>
-    <script src='./script.js'></script>
+    </div>
+</body>
+<script src='./script.js'></script>
+
 </html>
